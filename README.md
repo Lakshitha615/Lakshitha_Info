@@ -1,49 +1,105 @@
-<div style="background-color: #0a1a40; color: white; padding: 20px; border-radius: 10px;">
-
-# 💼 Lakshitha Priyashan - Personal Portfolio
-
-Welcome to the personal portfolio of **Lakshitha Priyashan**, a highly motivated front-end developer from Panadura, Sri Lanka. This portfolio site demonstrates skills in HTML, CSS, JavaScript, and React.js, and showcases various web projects built by Lakshitha.
-
----
-
-## 📋 Table of Contents
-- [Overview](#overview)
-- [Technologies Used](#technologies-used)
-- [Sections](#sections)
-- [Setup Instructions](#setup-instructions)
-- [Screenshots](#screenshots)
-
----
-
-## 🔍 Overview
-
-This portfolio webpage is designed as a **professional online resume**. It highlights **Lakshitha's skills, educational background, certifications, and completed projects**. The design is minimalistic, with a dark blue background (`#0a1a40`) and white and teal accents, providing a clean, modern look.
-
----
-
-## 💻 Technologies Used
-- **HTML** - Markup language used to structure the content.
-- **CSS (Tailwind CSS)** - Utility-first CSS framework to quickly style the application.
-- **JavaScript** - Used for interactive features and logic.
-- **React.js** - JavaScript library for building user interfaces.
-
----
-
-## 📑 Sections
-
-1. **Personal Statement** - A brief introduction about Lakshitha's work ethic and career goals.
-2. **Skills** - Key technical skills in web development and programming.
-3. **Education** - Academic background including institutions and courses of study.
-4. **Certifications** - Recognitions and certificates from reputable institutions.
-5. **Projects** - Detailed descriptions of web applications built by Lakshitha.
-6. **Contact Information** - Links to Lakshitha's email and GitHub profile.
-
----
-
-## ⚙️ Setup Instructions
-
-To run this portfolio locally, follow these steps:
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Lakshitha615/personal-portfolio.git
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshitha Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color:red; /* Dark blue */
+            color: red;
+        }
+        .text-3xl font-bold{
+           align-content:center;
+        }
+       
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Container -->
+    <div class="max-w-3xl mx-auto my-10 p-6 bg-darkblue shadow-lg rounded-lg">
+        <!-- Header Section -->
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-bold">LAKSHITHA PRIYASHAN</h1>
+            <p class="text-lg text-gray-300">Front-End Developer </p>
+            <p class="text-gray-400 mt-2">Panadura, Sri Lanka</p>
+            <p class="mt-1">
+                <a href="mailto:J.Lakshitha0615@gmail.com" class="text-teal-400 hover:underline">J.Lakshitha0615@gmail.com</a> | 
+                <a href="https://github.com/Lakshitha615" class="text-teal-400 hover:underline">github.com/Lakshitha615</a> |
+                0740863634
+            </p>
+        </header>
+        <!-- Summary Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-teal-400 mb-2">Personal Statement</h2>
+            <p class="text-gray-300 leading-relaxed">
+                I am a highly self-motivated, energetic and self-disciplined team worker. I can perform well under difficulties and tight schedules through the experience I have obtained from college and University. Furthermore, I would like to gain knowledge through small build project.
+            </p>
+        </section>
+        <!-- Skills Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-teal-400 mb-2">Skills</h2>
+            <div class="flex flex-wrap gap-4">
+                <span class="bg-teal-400 text-darkblue px-3 py-1 rounded-full text-sm font-medium">HTML</span>
+                <span class="bg-teal-400 text-darkblue px-3 py-1 rounded-full text-sm font-medium">CSS</span>
+                <span class="bg-teal-400 text-darkblue px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+                <span class="bg-teal-400 text-darkblue px-3 py-1 rounded-full text-sm font-medium">React.js</span>
+                <span class="bg-teal-400 text-darkblue px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                <span class="bg-teal-400 text-darkblue px-3 py-1 rounded-full text-sm font-medium">Java</span>
+                <span class="bg-teal-400 text-darkblue px-3 py-1 rounded-full text-sm font-medium">WordPress Development</span>
+            </div>
+        </section>
+        <!-- Education Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-teal-400 mb-2">Education</h2>
+            <div class="mb-4">
+                <h3 class="font-semibold text-white">Bachelor of Applied IT</h3>
+                <p class="text-gray-300">SLTC Research University, Padukka, Sri Lanka</p>
+                <p class="text-gray-400">Currently Enrolled</p>
+            </div>
+            <div class="mb-4">
+                <h3 class="font-semibold text-white">Computer Science Studies</h3>
+                <p class="text-gray-300">Open University of Sri Lanka, Colombo</p>
+                <p class="text-gray-400">Currently Enrolled</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-white">Diploma in HRM</h3>
+                <p class="text-gray-300">LPEC Campus, Kiribathgoda</p>
+            </div>
+        </section>
+        <!-- Certifications Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-teal-400 mb-2">Certifications</h2>
+            <ul class="list-disc list-inside text-gray-300">
+                <li>Python Programming - University of Moratuwa</li>
+                <li>WordPress Development - Coursera</li>
+            </ul>
+        </section>
+        <!-- Experience Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-teal-400 mb-2">Projects</h2>
+            <div>
+                <h3 class="font-semibold text-white">Personal Portfolio</h3>
+                <p class="text-gray-300">I create Personal Portfolio web page for to add my web development projects.</p><br/>
+            </div>
+            <div class="mb-4">
+                <h3 class="font-semibold text-white">Travel Web App</h3>
+                <p class="text-gray-300">A user-friendly travel planning application built using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-white">Web-Based Chat Application</h3>
+                <p class="text-gray-300">Developed a secure, web-based chat application as part of the Information Security module project at the university.</p>
+            </div>
+            
+        </section>
+        <!-- Contact Information Section -->
+        <footer class="text-center mt-10 text-gray-400">
+            <p>&copy; 2025 Lakshitha Priyashan. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+0 commit comments
+Comments
+0
